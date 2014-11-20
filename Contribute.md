@@ -22,183 +22,136 @@ You should also add tests covering the code you are adding.  If this is a bug fi
 
 ## Code review
 
-NOTE: THIS IS ALL OUT OF DATE AND NEEDS TO BE UPDATED. DO NOT DO THIS ANYMORE.
+Changes to RE2 must be reviewed before they are submitted, no matter who makes the change. (In exceptional cases, such as fixing a build, the review can follow shortly after submitting.) 
+The code review process is managed by using git to submit to the code review server.
 
-Changes to RE2 must be reviewed before they are submitted, no matter who makes the change. (In exceptional cases, such as fixing a build, the review can follow shortly after submitting.) A Mercurial extension helps manage the code review process. The extension is included in the RE2 source tree but needs to be added to your Mercurial configuration.
+### Configuring your Git client
 
-### Caveat for Mercurial aficionados
-Using Mercurial with the code review extension is not the same as using standard Mercurial.
-
-The RE2 repository is maintained as a single line of reviewed changes; we prefer to avoid the complexity of Mercurial's arbitrary change graph. The code review extension helps here: its ` hg submit ` command automatically checks for and warns about the local repository being out of date compared to the remote one. The ` hg submit ` command also verifies other properties about the RE2 repository. For example, it checks that the author of the code is properly recorded for copyright purposes.
-
-To help ensure changes are only created by ` hg submit `, the code review extension disables the standard ` hg commit ` command.
-
-Mercurial power users: To allow RE2 contributors to take advantage of Mercurial's functionality for local revision control, it might be interesting to explore how the code review extension can be made to work alongside the Mercurial Queues extension.
-
-### Configure the extension
-
-Edit ` your_re2_root/.hg/hgrc ` to add:
+Start by double-checking that you have cloned your Git repository from https://code.googlesource.com/re2, not from GitHub. That server is the code review server, running Gerrit.
 
 <pre>
-[extensions]<br>
-codereview = /your_re2_root/lib/codereview/codereview.py<br>
-[ui]<br>
-username = Your Name <you@server.dom><br>
-</pre>
-Replace ` /your_re2_root ` with the fully rooted path to your re2 checkout's root (where the LICENSE file is).  The Mercurial configuration file format does not allow environment variable substitution. The username information will not be used unless you are a committer (see below), but Mercurial complains if it is missing.
-
-### Log in to the code review site
-
-The code review server uses a Google Account to authenticate. (If you can use the account to sign in at google.com, you can use it to sign in to the code review server. The email address you use on the Code Review site will be recorded in the Mercurial change log and in the CONTRIBUTORS file. You can create a Google Account associated with any address where you receive email.
-
-<pre>
-$ cd your_re2_root<br>
-$ hg code-login<br>
-Email (login for uploading to codereview.appspot.com): rsc@swtch.com<br>
-Password for rsc@swtch.com<br>
-Saving authentication cookies ...<br>
-$<br>
+$ git config remote.origin.url
+https://code.googlesource.com/re2
 </pre>
 
-If you use two-factor authentication with your Google Account, the password here should be an Application-Specific Password, not your real password.  See https://accounts.google.com/IssuedAuthSubTokens for details.
-
-### Configure your account settings
-
-Edit your code review settings. Grab a nickname. Many people prefer to set the Context option to “Whole file” to see more context when reviewing changes.
-
-Once you have chosen a nickname in the settings page, others can use that nickname as a shorthand for naming reviewers and the CC list. For example, rsc is an alias for ` rsc@golang.org `.
-
-### Make a change
-The entire checked-out tree is writable. If you need to edit files, just edit them: Mercurial will figure out which ones changed. You do need to inform Mercurial of added, removed, copied, or renamed files, by running hg add, hg rm, hg cp, or hg mv.
-
-When you are ready to send a change out for review, run
+Next, configure a command shortcut <code>git upload</code>.
 
 <pre>
-$ hg change<br>
+$ git config alias.upload 'push origin HEAD:refs/for/master'
 </pre>
-from any directory in your RE2 repository. Mercurial will open a change description file in your editor. (It uses the editor named by the $EDITOR environment variable, vi by default.) The file will look like:
+
+Next, install the Gerrit commit hook, which adds a Change-Id line to any commit you make.
 
 <pre>
-# Change list.<br>
-# Lines beginning with # are ignored.<br>
-# Multi-line values should be indented.<br>
-<br>
-Reviewer:<br>
-CC:<br>
-<br>
-Description:<br>
-<enter description here><br>
-<br>
-Files:<br>
-re2/simplify.cc<br>
-re2/testing/simplify_test.cc<br>
-re2/testing/random_test.cc<br>
+$ cd .git/hooks
+$ ln -s ../../lib/git/commit-msg.hook commit-msg
 </pre>
-The Reviewer line lists the reviewers assigned to this change, and the CC line lists people to notify about the change. These can be code review nicknames or arbitrary email addresses. Reviewer should typically be ` rsc `.
 
-Replace “` <enter description here> `” with a description of your change. The first line of the change description is conventionally a one-line summary of the change and is used as the subject for code review mail; the rest of the description elaborates.
-
-The Files section lists all the modified files in your client. It is best to keep unrelated changes in different change lists. In this example, we can include just the changes to the simplifier by deleting the line mentioning ` random_test.cc `.
-
-After editing, the template might now read:
+If you don't have them set globally already, set the default user name and email address to use in commits.
 
 <pre>
-# Change list.<br>
-# Lines beginning with # are ignored.<br>
-# Multi-line values should be indented.<br>
-<br>
-Reviewer: rsc<br>
-CC:<br>
-<br>
-Description:<br>
+$ git config user.name "Grace R. Emlin"
+$ git config user.email gre@swtch.com
+</pre>
+
+### Creating a change
+
+The code review process requires that each change live in a branch with exactly one commit beyond the master branch.
+Start by switching to a new branch; you can choose any name. In this example we'll use <code>bugfix</code>
+
+<pre>
+$ git checkout -b bugfix
+</pre>
+
+Now make whatever changes you need to make, and commit them with <code>git add</code> and <code>git commit</code>.
+
+<pre>
+$ git add re2/re2.cc
+$ git commit
+</pre>
+
+The first line of the commit description is conventionally a one-line summary of the change and is used as the subject for code review mail; the rest of the description elaborates. For example:
+
+<pre>
 fix bug in simplifier<br>
 <br>
 See Bimmler and Shaney, ``Extreme automata,'' J. Applied Math 3(14).<br>
-Fixes issue 159.<br>
-<br>
-Files:<br>
-re2/simplify.cc<br>
-re2/simplify_test.cc<br>
+Fixes #159.<br>
 </pre>
+
 The special sentence “` Fixes #159. `” associates the change with issue 159 in the RE2 issue tracker. When this change is eventually submitted, the issue tracker will automatically mark the issue as fixed.
 
-Save the file and exit the editor.
-
-The code review server assigns your change an issue number and URL, which hg change will print, something like:
+If you need to revise the change after <code>git commit</code>, use <code>git commit --amend</code> to rewrite the commit
+instead of creating a new commit.
 
 <pre>
-CL created: http://codereview.appspot.com/99999<br>
+$ git add re2/re2.h
+$ git commit --amend
 </pre>
-If you need to re-edit the change description, run hg change 99999.
-
-You can see a list of your pending changes by running ` hg pending ` (` hg p ` for short).
 
 ### Synchronize your client
+
 While you were working, others might have submitted changes to the repository. To update your client, run
 
 <pre>
-$ hg sync<br>
+$ git fetch origin
+$ git rebase origin/master
 </pre>
-(For Mercurial fans, hg sync runs ` hg pull -u ` but then also synchronizes the local change list state against the new data.)
 
-If files you were editing have changed, Mercurial does its best to merge the remote changes into your local changes. It may leave some files to merge by hand.
+If files you were editing have changed, Git does its best to merge the remote changes into your local changes. It may leave some files to merge by hand.
+After making any necessary edits, commit them using <code>git commit --amend</code>, as usual.
 
+### Log in to the code review site
 
-### Mail the change for review
-To send out a change for review, run ` hg mail ` using the change list number assigned during hg change:
+In order to upload a change, you must log in to the code review site, obtain a password, and store
+that password where Git can find it. You only need to do this for your first change.
+Subsequent changes will use the same password.
+
+Open your web browser and log in to https://code-review.googlesource.com/.
+Visit https://code-review.googlesource.com/#/settings/http-password and click “Obtain Password.”
+After selecting which Google Account to create a Git password for, you should end up on a page
+showing lines to copy into your <code>$HOME/.netrc</code>. Copy them into that file.
+
+### Uploading a change
+
+When the change is ready, upload it using <code>git upload</code>, which you defined earlier.
 
 <pre>
-$ hg mail 99999<br>
+$ git upload
 </pre>
-You can add to the Reviewer: and CC: lines using the -r or --cc options. In the above example, we could have left the Reviewer and CC lines blank and then run:
 
-<pre>
-$ hg mail -r rsc--cc math-nuts@swtch.com 99999<br>
-</pre>
-to achieve the same effect.
-
-Note that ` -r ` and ` --cc ` cannot be spelled ` --r ` or ` -cc `.
+Uploading the change will trigger mail to the RE2 developers that a new change is ready.
 
 ### Reviewing code
-Running ` hg mail ` will send an email to you and the reviewers asking them to visit the issue's URL and make coments on the change. When done, the reviewer clicks “Publish and Mail comments” to send comments back.
+
+Running ` git upload ` will send an email to you and the reviewers asking them to visit the issue's web page and make coments on the change. When done, the reviewer sends comments back using the web page.
 
 ### Revise and upload
-You will probably revise your code in response to the reviewer comments. When you have revised the code and are ready for another round of review, run
+
+You will probably revise your code in response to the reviewer comments. When you have revised the code and are ready for another round of review, update the change as before, with <code>git add</code> and <code>git commit --amend</code>, and then re-run <code>git upload</code>.
+
+In addition to the <code>git upload</code>, you should visit the code review web page and reply to the comments, letting the reviewer know that you've addressed them or explain why you haven't.
+Once your line-by-line comment replies are ready and you've uploaded the new version, click “Reply” and enter “PTAL” (please take another look) as the message.
+
+The reviewer can comment on the new copy, and the process repeats. The reviewer approves the change by replying with a +1.
+Trusted reviewers can give the change a +2 score and submit it by clicking the “Submit”  button.
+When that happens, you get an email that the code has been submitted.
+
+The change is submitted with additional metadata in the change description, so you will not be able to merge it with
+your work directly. 
+Instead, switch back to the master branch, discard the old branch, and pull your work back into master.
 
 <pre>
-$ hg mail 99999<br>
+$ git checkout master
+$ git change -d bugfix
+$ git pull
 </pre>
-again to upload the latest copy and send mail asking the reviewers to please take another look (PTAL). You might also visit the code review web page and reply to the comments, letting the reviewer know that you've addressed them or explain why you haven't. When you're done replying, click “Publish and Mail comments” to send the line-by-line replies and any other comments.
-
-The reviewer can comment on the new copy, and the process repeats. The reviewer approves the change by replying with a mail that says LGTM: looks good to me.
-
-Submit the change after the review
-After the code has been LGTM'ed, it is time to submit it to the Mercurial repository. If you are a committer, you can run:
-
-<pre>
-$ hg submit 99999<br>
-</pre>
-This checks the change into the repository. The change description will include a link to the code review, and the code review will be updated with a link to the change in the repository.
-
-If your local copy of the repository is out of date, ` hg submit ` will refuse the change:
-
-<pre>
-$ hg submit 99999<br>
-local repository out of date; must sync before submit<br>
-</pre>
-If you are not a committer, you cannot submit the change directly. Instead, a committer, usually the reviewer who said LGTM, will run:
-
-<pre>
-$ hg clpatch 99999<br>
-$ hg submit 99999<br>
-</pre>
-The clpatch command imports your change 99999 into the committer's local Mercurial client, at which point the committer can check or test the code more. (Anyone can run clpatch to try a change that has been uploaded to the code review server.) The submit command submits the code. You will be listed as the author, but the change message will also indicate who the committer was. Your local client will notice that the change has been submitted when you next run hg sync.
 
 ## Copyright
 
-Files in the RE2 repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date. Instead, your name will appear in the [Mercurial change log](http://code.google.com/p/re2/source/list) and in the [CONTRIBUTORS](http://code.google.com/p/re2/source/browse/CONTRIBUTORS) file and perhaps the [AUTHORS](http://code.google.com/p/re2/source/browse/AUTHORS) file.
+Files in the RE2 repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date. Instead, your name will appear in the [Git change log](https://github.com/google/re2/commits/master) and in the [CONTRIBUTORS](https://github.com/google/re2/blob/master/CONTRIBUTORS) file and perhaps the [AUTHORS](https://github.com/google/re2/blob/master/AUTHORS) file.
 
-The [CONTRIBUTORS](http://code.google.com/p/re2/source/browse/CONTRIBUTORS) file defines who the RE2 contributors—the people—are; the [AUTHORS](http://code.google.com/p/re2/source/browse/AUTHORS) file, which defines who “The RE2 Authors”—the copyright holders—are. The RE2 developers at Google will update these files when submitting your first change. In order for them to do that, you need to have completed one of the contributor license agreements:
+The [CONTRIBUTORS](https://github.com/google/re2/blob/master/CONTRIBUTORS) file defines who the RE2 contributors—the people—are; the [AUTHORS](https://github.com/google/re2/blob/master/AUTHORS) file, which defines who “The RE2 Authors”—the copyright holders—are. The RE2 developers at Google will update these files when submitting your first change. In order for them to do that, you need to have completed one of the contributor license agreements:
 
   * If you are the copyright holder, you will need to agree to the [individual contributor license agreement](http://code.google.com/legal/individual-cla-v1.0.html), which can be completed online.
 

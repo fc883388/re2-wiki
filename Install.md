@@ -1,9 +1,9 @@
-<b>Quick links:</b> <a href='http://code.google.com/p/re2/source/browse'>browse</a> | <a href='http://code.google.com/p/re2/source/list'>changes</a>
+<b>Quick links:</b> <a href='https://github.com/google/re2'>browse</a> | <a href='https://github.com/google/re2/commits/master'>changes</a>
 
 RE2 should install on any modern Unix clone with g++.
 
 <pre>
-hg clone https://re2.googlecode.com/hg re2<br>
+git clone https://code.googlesource.com/re2<br>
 cd re2<br>
 make test<br>
 make install<br>
@@ -12,7 +12,7 @@ make testinstall</pre>
 
 No attempt has been made to make RE2 compile on Windows, but if anyone would like to try, patches would be welcomed.
 
-For documentation on how to use RE2, see the comment at the top of <a href='http://code.google.com/p/re2/source/browse/re2/re2.h'>re2/re2.h</a>.
+For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/master/re2/re2.h'>re2/re2.h</a>.
 
 [How to contribute code.](wiki/Contribute)
 
