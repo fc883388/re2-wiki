@@ -11,8 +11,8 @@ In short, send mail before you code.  And don't start the discussion by mailing 
 Before sending code out for review, run all the tests for the whole tree to make sure the changes don't break other packages or programs:
 
 <pre>
-$ cd your_re2_root<br>
-$ make test<br>
+$ cd your_re2_root
+$ make test
 </pre>
 
 The test output should end with the line ` ALL TESTS PASSED. `
@@ -73,10 +73,10 @@ $ git commit
 The first line of the commit description is conventionally a one-line summary of the change and is used as the subject for code review mail; the rest of the description elaborates. For example:
 
 <pre>
-fix bug in simplifier<br>
-<br>
-See Bimmler and Shaney, ``Extreme automata,'' J. Applied Math 3(14).<br>
-Fixes #159.<br>
+fix bug in simplifier
+
+See Bimmler and Shaney, ``Extreme automata,'' J. Applied Math 3(14).
+Fixes #159.
 </pre>
 
 The special sentence “` Fixes #159. `” associates the change with issue 159 in the RE2 issue tracker. When this change is eventually submitted, the issue tracker will automatically mark the issue as fixed.
@@ -162,7 +162,7 @@ This rigmarole needs to be done only for your first submission.
 Code that you contribute should use the standard copyright header:
 
 <pre>
-// Copyright 2010 The RE2 Authors. All rights reserved.<br>
-// Use of this source code is governed by a BSD-style<br>
-// license that can be found in the LICENSE file.<br>
+// Copyright 2010 The RE2 Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
 </pre>
