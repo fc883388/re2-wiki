@@ -110,7 +110,8 @@ Subsequent changes will use the same password.
 Open your web browser and log in to https://code-review.googlesource.com/.
 Visit https://code-review.googlesource.com/#/settings/http-password and click “Obtain Password.”
 After selecting which Google Account to create a Git password for, you should end up on a page
-showing lines to copy into your <code>$HOME/.netrc</code>. Copy them into that file.
+with a password and instructions for installing that password for use by Git.
+Follow those instructions.
 
 ### Uploading a change
 
