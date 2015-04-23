@@ -14,7 +14,7 @@ No attempt has been made to make RE2 compile on Windows, but if anyone would lik
 
 For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/master/re2/re2.h'>re2/re2.h</a>.
 
-[How to contribute code.](wiki/Contributing)
+[How to contribute code.](Contribute)
 
 Mail [re2-dev](https://groups.google.com/group/re2-dev) with problems.
 
