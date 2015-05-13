@@ -1,4 +1,4 @@
-This document explains how to contribute changes to RE2. It assumes you have installed RE2 using the [installation instructions](wiki/Install).
+This document explains how to contribute changes to RE2. It assumes you have installed RE2 using the [installation instructions](Install).
 
 ## Discuss your design
 RE2 welcomes submissions but please let everyone know what you're working on if you want it to become part of the main repository.
