@@ -23,5 +23,5 @@ An Erlang wrapper is at https://github.com/tuncer/re2/.<br />
 An Inferno wrapper is at https://github.com/powerman/inferno-re2/.<br />
 A Python wrapper is at https://github.com/facebook/pyre2/.<br />
 A Ruby wrapper is at https://github.com/axic/rre2/.<br />
-A Perl wrapper is at http://search.cpan.org/~dgl/re-engine-RE2-0.05/lib/re/engine/RE2.pm.<br />
+A Perl wrapper is at http://search.cpan.org/~dgl/re-engine-RE2-0.13/lib/re/engine/RE2.pm.<br />
 An Eiffel wrapper is at http://sourceforge.net/projects/eiffelre2/.<br />
