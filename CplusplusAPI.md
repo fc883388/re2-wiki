@@ -4,7 +4,7 @@ In POSIX mode, RE2 accepts standard POSIX (egrep) syntax regular expressions.
 In Perl mode, RE2 accepts most Perl operators.  The only excluded ones are
 those that require backtracking (and its potential for exponential runtime)
 to implement.  These include backreferences (submatching is still okay)
-and generalized assertions.  The [Syntax](wiki/Syntax) page documents the supported Perl-mode syntax in detail.  The default is Perl mode.
+and generalized assertions.  The [[Syntax]] page documents the supported Perl-mode syntax in detail.  The default is Perl mode.
 
 # Matching Interface
 
