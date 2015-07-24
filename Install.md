@@ -18,10 +18,10 @@ For documentation on how to use RE2, see the comment at the top of <a href='http
 
 Mail [re2-dev](https://groups.google.com/group/re2-dev) with problems.
 
-RE2's native language is C++.<br />
-An Erlang wrapper is at https://github.com/tuncer/re2/.<br />
-An Inferno wrapper is at https://github.com/powerman/inferno-re2/.<br />
-A Python wrapper is at https://github.com/facebook/pyre2/.<br />
-A Ruby wrapper is at https://github.com/axic/rre2/.<br />
-A Perl wrapper is at http://search.cpan.org/~dgl/re-engine-RE2-0.13/lib/re/engine/RE2.pm.<br />
-An Eiffel wrapper is at http://sourceforge.net/projects/eiffelre2/.<br />
+RE2's native language is C++.<br>
+An Erlang wrapper is at https://github.com/tuncer/re2/.<br>
+An Inferno wrapper is at https://github.com/powerman/inferno-re2/.<br>
+An OCaml wrapper is at https://github.com/janestreet/re2/ and on OPAM.<br>
+A Perl wrapper is at https://github.com/dgl/re-engine-RE2/ and on CPAN.<br>
+A Python wrapper is at https://github.com/facebook/pyre2/.<br>
+A Ruby wrapper is at https://github.com/axic/rre2/.<br>
