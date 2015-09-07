@@ -21,6 +21,7 @@ Mail [re2-dev](https://groups.google.com/group/re2-dev) with problems.
 RE2's native language is C++.<br>
 An Erlang wrapper is at https://github.com/tuncer/re2/.<br>
 An Inferno wrapper is at https://github.com/powerman/inferno-re2/.<br>
+A Node.js wrapper is at https://github.com/uhop/node-re2/ and on NPM.<br>
 An OCaml wrapper is at https://github.com/janestreet/re2/ and on OPAM.<br>
 A Perl wrapper is at https://github.com/dgl/re-engine-RE2/ and on CPAN.<br>
 A Python wrapper is at https://github.com/facebook/pyre2/.<br>
