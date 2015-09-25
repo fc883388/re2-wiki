@@ -10,7 +10,7 @@ make install<br>
 make testinstall</pre>
 (On BSD systems, use ` gmake ` instead of ` make `.)
 
-No attempt has been made to make RE2 compile on Windows, but if anyone would like to try, patches would be welcomed.
+Bazel and CMake are also supported. The latter should enable generation of MSVC and Xcode projects. Patches are welcome!
 
 For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/master/re2/re2.h'>re2/re2.h</a>.
 
