@@ -88,7 +88,7 @@
 <tr><td><code>\A</code></td><td>at beginning of text</td></tr>
 <tr><td><code>\b</code></td><td>at ASCII word boundary (<code>\w</code> on one side and <code>\W</code>, <code>\A</code>, or <code>\z</code> on the other)</td></tr>
 <tr><td><code>\B</code></td><td>not at ASCII word boundary</td></tr>
-<tr><td><font color='#808080'><code>\G</code></font></td><td>at beginning of subtext being searched <small>(NOT SUPPORTED)</small> <small>PCRE</small></td></tr>
+<tr><td><font color='#808080'><code>\g</code></font></td><td>at beginning of subtext being searched <small>(NOT SUPPORTED)</small> <small>PCRE</small></td></tr>
 <tr><td><font color='#808080'><code>\G</code></font></td><td>at end of last match <small>(NOT SUPPORTED)</small> <small>PERL</small></td></tr>
 <tr><td><font color='#808080'><code>\Z</code></font></td><td>at end of text, or before newline at end of text <small>(NOT SUPPORTED)</small></td></tr>
 <tr><td><code>\z</code></td><td>at end of text</td></tr>
