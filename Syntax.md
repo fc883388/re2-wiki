@@ -7,7 +7,7 @@
 <tr><td>any character, possibly including newline (s=true)</td><td><code>.</code></td></tr>
 <tr><td>character class</td><td><code>[xyz]</code></td></tr>
 <tr><td>negated character class</td><td><code>[^xyz]</code></td></tr>
-<tr><td>Perl character class</td><td><code>\d</code></td></tr>
+<tr><td>Perl character class <a href="#perl">(link)</a></td><td><code>\d</code></td></tr>
 <tr><td>negated Perl character class</td><td><code>\D</code></td></tr>
 <tr><td>ASCII character class</td><td><code>[[:alpha:]]</code></td></tr>
 <tr><td>negated ASCII character class</td><td><code>[[:^alpha:]]</code></td></tr>
@@ -177,7 +177,7 @@
 <tr><td><code>[^\p{Name}]</code></td><td>named Unicode property inside negated character class (≡ <code>\P{Name}</code>)</td></tr>
 </table>
 
-<table>
+<table id="perl">
 <tr><th></th><th>Perl character classes (all ASCII-only)</th></tr>
 <tr><td><code>\d</code></td><td>digits (≡ <code>[0-9]</code>)</td></tr>
 <tr><td><code>\D</code></td><td>not digits (≡ <code>[^0-9]</code>)</td></tr>
