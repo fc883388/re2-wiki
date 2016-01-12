@@ -177,7 +177,8 @@
 <tr><td><code>[^\p{Name}]</code></td><td>named Unicode property inside negated character class (≡ <code>\P{Name}</code>)</td></tr>
 </table>
 
-<table id="perl">
+<a name="perl"></a>
+<table>
 <tr><th></th><th>Perl character classes (all ASCII-only)</th></tr>
 <tr><td><code>\d</code></td><td>digits (≡ <code>[0-9]</code>)</td></tr>
 <tr><td><code>\D</code></td><td>not digits (≡ <code>[^0-9]</code>)</td></tr>
