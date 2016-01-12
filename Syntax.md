@@ -3,18 +3,18 @@
 <p>Grayed out expressions are not supported by RE2.
 
 <table>
-<tr><th></th><th>Single characters</th></tr>
-<tr><td><code>.</code></td><td>any character, possibly including newline (s=true)</td></tr>
-<tr><td><code>[xyz]</code></td><td>character class</td></tr>
-<tr><td><code>[^xyz]</code></td><td>negated character class</td></tr>
-<tr><td><code>\d</code></td><td>Perl character class</td></tr>
-<tr><td><code>\D</code></td><td>negated Perl character class</td></tr>
-<tr><td><code>[[:alpha:]]</code></td><td>ASCII character class</td></tr>
-<tr><td><code>[[:^alpha:]]</code></td><td>negated ASCII character class</td></tr>
-<tr><td><code>\pN</code></td><td>Unicode character class (one-letter name)</td></tr>
-<tr><td><code>\p{Greek}</code></td><td>Unicode character class</td></tr>
-<tr><td><code>\PN</code></td><td>negated Unicode character class (one-letter name)</td></tr>
-<tr><td><code>\P{Greek}</code></td><td>negated Unicode character class</td></tr>
+<tr><th>kinds of single-character expressions</th><th>examples</th></tr>
+<tr><td>any character, possibly including newline (s=true)</td><td><code>.</code></td></tr>
+<tr><td>character class</td><td><code>[xyz]</code></td></tr>
+<tr><td>negated character class</td><td><code>[^xyz]</code></td></tr>
+<tr><td>Perl character class</td><td><code>\d</code></td></tr>
+<tr><td>negated Perl character class</td><td><code>\D</code></td></tr>
+<tr><td>ASCII character class</td><td><code>[[:alpha:]]</code></td></tr>
+<tr><td>negated ASCII character class</td><td><code>[[:^alpha:]]</code></td></tr>
+<tr><td>Unicode character class (one-letter name)</td><td><code>\pN</code></td></tr>
+<tr><td>Unicode character class</td><td><code>\p{Greek}</code></td></tr>
+<tr><td>negated Unicode character class (one-letter name)</td><td><code>\PN</code></td></tr>
+<tr><td>negated Unicode character class</td><td><code>\P{Greek}</code></td></tr>
 </table>
 
 <table>
@@ -24,7 +24,7 @@
 </table>
 
 <table>
-<tr><th></th><th>Repetitions:</th></tr>
+<tr><th></th><th>Repetitions</th></tr>
 <tr><td><code>x*</code></td><td>zero or more <code>x</code>, prefer more</td></tr>
 <tr><td><code>x+</code></td><td>one or more <code>x</code>, prefer more</td></tr>
 <tr><td><code>x?</code></td><td>zero or one <code>x</code>, prefer one</td></tr>
@@ -46,7 +46,7 @@
 <p>Implementation restriction: The counting forms <code>x{n,m}</code>, <code>x{n,}</code>, and <code>x{n}</code> reject forms that create a minimum or maximum repetition count above 1000. Unlimited repetitions are not subject to this restriction.
 
 <table>
-<tr><th></th><th>Possessive repetitions:</th></tr>
+<tr><th></th><th>Possessive repetitions</th></tr>
 <tr><td><font color='#808080'><code>x*+</code></font></td><td>zero or more <code>x</code>, possessive <small>(NOT SUPPORTED)</small></td></tr>
 <tr><td><font color='#808080'><code>x++</code></font></td><td>one or more <code>x</code>, possessive <small>(NOT SUPPORTED)</small></td></tr>
 <tr><td><font color='#808080'><code>x?+</code></font></td><td>zero or one <code>x</code>, possessive <small>(NOT SUPPORTED)</small></td></tr>
