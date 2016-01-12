@@ -9,7 +9,7 @@
 <tr><td>negated character class</td><td><code>[^xyz]</code></td></tr>
 <tr><td>Perl character class <a href="#perl">(link)</a></td><td><code>\d</code></td></tr>
 <tr><td>negated Perl character class</td><td><code>\D</code></td></tr>
-<tr><td>ASCII character class</td><td><code>[[:alpha:]]</code></td></tr>
+<tr><td>ASCII character class <a href="#ascii">(link)</a></td><td><code>[[:alpha:]]</code></td></tr>
 <tr><td>negated ASCII character class</td><td><code>[[:^alpha:]]</code></td></tr>
 <tr><td>Unicode character class (one-letter name)</td><td><code>\pN</code></td></tr>
 <tr><td>Unicode character class</td><td><code>\p{Greek}</code></td></tr>
@@ -192,6 +192,7 @@
 <tr><td><font color='#808080'><code>\V</code></font></td><td>not vertical space <small>(NOT SUPPORTED)</small></td></tr>
 </table>
 
+<a name="ascii"></a>
 <table>
 <tr><th></th><th>ASCII character classes</th></tr>
 <tr><td><code>[[:alnum:]]</code></td><td>alphanumeric (≡ <code>[0-9A-Za-z]</code>)</td></tr>
