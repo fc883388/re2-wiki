@@ -255,106 +255,138 @@
 </table>
 
 <table>
-<tr><th></th><th>Unicode character class names--scripts</th></tr>
-<tr><td><code>Arabic</code></td><td>Arabic</td></tr>
-<tr><td><code>Armenian</code></td><td>Armenian</td></tr>
-<tr><td><code>Balinese</code></td><td>Balinese</td></tr>
-<tr><td><code>Bamum</code></td><td>Bamum</td></tr>
-<tr><td><code>Batak</code></td><td>Batak</td></tr>
-<tr><td><code>Bengali</code></td><td>Bengali</td></tr>
-<tr><td><code>Bopomofo</code></td><td>Bopomofo</td></tr>
-<tr><td><code>Brahmi</code></td><td>Brahmi</td></tr>
-<tr><td><code>Braille</code></td><td>Braille</td></tr>
-<tr><td><code>Buginese</code></td><td>Buginese</td></tr>
-<tr><td><code>Buhid</code></td><td>Buhid</td></tr>
-<tr><td><code>Canadian_Aboriginal</code></td><td>Canadian Aboriginal</td></tr>
-<tr><td><code>Carian</code></td><td>Carian</td></tr>
-<tr><td><code>Chakma</code></td><td>Chakma</td></tr>
-<tr><td><code>Cham</code></td><td>Cham</td></tr>
-<tr><td><code>Cherokee</code></td><td>Cherokee</td></tr>
-<tr><td><code>Common</code></td><td>characters not specific to one script</td></tr>
-<tr><td><code>Coptic</code></td><td>Coptic</td></tr>
-<tr><td><code>Cuneiform</code></td><td>Cuneiform</td></tr>
-<tr><td><code>Cypriot</code></td><td>Cypriot</td></tr>
-<tr><td><code>Cyrillic</code></td><td>Cyrillic</td></tr>
-<tr><td><code>Deseret</code></td><td>Deseret</td></tr>
-<tr><td><code>Devanagari</code></td><td>Devanagari</td></tr>
-<tr><td><code>Egyptian_Hieroglyphs</code></td><td>Egyptian Hieroglyphs</td></tr>
-<tr><td><code>Ethiopic</code></td><td>Ethiopic</td></tr>
-<tr><td><code>Georgian</code></td><td>Georgian</td></tr>
-<tr><td><code>Glagolitic</code></td><td>Glagolitic</td></tr>
-<tr><td><code>Gothic</code></td><td>Gothic</td></tr>
-<tr><td><code>Greek</code></td><td>Greek</td></tr>
-<tr><td><code>Gujarati</code></td><td>Gujarati</td></tr>
-<tr><td><code>Gurmukhi</code></td><td>Gurmukhi</td></tr>
-<tr><td><code>Han</code></td><td>Han</td></tr>
-<tr><td><code>Hangul</code></td><td>Hangul</td></tr>
-<tr><td><code>Hanunoo</code></td><td>Hanunoo</td></tr>
-<tr><td><code>Hebrew</code></td><td>Hebrew</td></tr>
-<tr><td><code>Hiragana</code></td><td>Hiragana</td></tr>
-<tr><td><code>Imperial_Aramaic</code></td><td>Imperial Aramaic</td></tr>
-<tr><td><code>Inherited</code></td><td>inherit script from previous character</td></tr>
-<tr><td><code>Inscriptional_Pahlavi</code></td><td>Inscriptional Pahlavi</td></tr>
-<tr><td><code>Inscriptional_Parthian</code></td><td>Inscriptional Parthian</td></tr>
-<tr><td><code>Javanese</code></td><td>Javanese</td></tr>
-<tr><td><code>Kaithi</code></td><td>Kaithi</td></tr>
-<tr><td><code>Kannada</code></td><td>Kannada</td></tr>
-<tr><td><code>Katakana</code></td><td>Katakana</td></tr>
-<tr><td><code>Kayah_Li</code></td><td>Kayah Li</td></tr>
-<tr><td><code>Kharoshthi</code></td><td>Kharoshthi</td></tr>
-<tr><td><code>Khmer</code></td><td>Khmer</td></tr>
-<tr><td><code>Lao</code></td><td>Lao</td></tr>
-<tr><td><code>Latin</code></td><td>Latin</td></tr>
-<tr><td><code>Lepcha</code></td><td>Lepcha</td></tr>
-<tr><td><code>Limbu</code></td><td>Limbu</td></tr>
-<tr><td><code>Linear_B</code></td><td>Linear B</td></tr>
-<tr><td><code>Lycian</code></td><td>Lycian</td></tr>
-<tr><td><code>Lydian</code></td><td>Lydian</td></tr>
-<tr><td><code>Malayalam</code></td><td>Malayalam</td></tr>
-<tr><td><code>Mandaic</code></td><td>Mandaic</td></tr>
-<tr><td><code>Meetei_Mayek</code></td><td>Meetei Mayek</td></tr>
-<tr><td><code>Meroitic_Cursive</code></td><td>Meroitic Cursive</td></tr>
-<tr><td><code>Meroitic_Hieroglyphs</code></td><td>Meroitic Hieroglyphs</td></tr>
-<tr><td><code>Miao</code></td><td>Miao</td></tr>
-<tr><td><code>Mongolian</code></td><td>Mongolian</td></tr>
-<tr><td><code>Myanmar</code></td><td>Myanmar</td></tr>
-<tr><td><code>New_Tai_Lue</code></td><td>New Tai Lue (aka Simplified Tai Lue)</td></tr>
-<tr><td><code>Nko</code></td><td>Nko</td></tr>
-<tr><td><code>Ogham</code></td><td>Ogham</td></tr>
-<tr><td><code>Ol_Chiki</code></td><td>Ol Chiki</td></tr>
-<tr><td><code>Old_Italic</code></td><td>Old Italic</td></tr>
-<tr><td><code>Old_Persian</code></td><td>Old Persian</td></tr>
-<tr><td><code>Old_South_Arabian</code></td><td>Old South Arabian</td></tr>
-<tr><td><code>Old_Turkic</code></td><td>Old Turkic</td></tr>
-<tr><td><code>Oriya</code></td><td>Oriya</td></tr>
-<tr><td><code>Osmanya</code></td><td>Osmanya</td></tr>
-<tr><td><code>Phags_Pa</code></td><td>'Phags Pa</td></tr>
-<tr><td><code>Phoenician</code></td><td>Phoenician</td></tr>
-<tr><td><code>Rejang</code></td><td>Rejang</td></tr>
-<tr><td><code>Runic</code></td><td>Runic</td></tr>
-<tr><td><code>Saurashtra</code></td><td>Saurashtra</td></tr>
-<tr><td><code>Sharada</code></td><td>Sharada</td></tr>
-<tr><td><code>Shavian</code></td><td>Shavian</td></tr>
-<tr><td><code>Sinhala</code></td><td>Sinhala</td></tr>
-<tr><td><code>Sora_Sompeng</code></td><td>Sora Sompeng</td></tr>
-<tr><td><code>Sundanese</code></td><td>Sundanese</td></tr>
-<tr><td><code>Syloti_Nagri</code></td><td>Syloti Nagri</td></tr>
-<tr><td><code>Syriac</code></td><td>Syriac</td></tr>
-<tr><td><code>Tagalog</code></td><td>Tagalog</td></tr>
-<tr><td><code>Tagbanwa</code></td><td>Tagbanwa</td></tr>
-<tr><td><code>Tai_Le</code></td><td>Tai Le</td></tr>
-<tr><td><code>Tai_Tham</code></td><td>Tai Tham</td></tr>
-<tr><td><code>Tai_Viet</code></td><td>Tai Viet</td></tr>
-<tr><td><code>Takri</code></td><td>Takri</td></tr>
-<tr><td><code>Tamil</code></td><td>Tamil</td></tr>
-<tr><td><code>Telugu</code></td><td>Telugu</td></tr>
-<tr><td><code>Thaana</code></td><td>Thaana</td></tr>
-<tr><td><code>Thai</code></td><td>Thai</td></tr>
-<tr><td><code>Tibetan</code></td><td>Tibetan</td></tr>
-<tr><td><code>Tifinagh</code></td><td>Tifinagh</td></tr>
-<tr><td><code>Ugaritic</code></td><td>Ugaritic</td></tr>
-<tr><td><code>Vai</code></td><td>Vai</td></tr>
-<tr><td><code>Yi</code></td><td>Yi</td></tr>
+<tr><th>Unicode character class names--scripts</th></tr>
+<tr><td><code>Ahom</code></td></tr>
+<tr><td><code>Anatolian_Hieroglyphs</code></td></tr>
+<tr><td><code>Arabic</code></td></tr>
+<tr><td><code>Armenian</code></td></tr>
+<tr><td><code>Avestan</code></td></tr>
+<tr><td><code>Balinese</code></td></tr>
+<tr><td><code>Bamum</code></td></tr>
+<tr><td><code>Bassa_Vah</code></td></tr>
+<tr><td><code>Batak</code></td></tr>
+<tr><td><code>Bengali</code></td></tr>
+<tr><td><code>Bopomofo</code></td></tr>
+<tr><td><code>Brahmi</code></td></tr>
+<tr><td><code>Braille</code></td></tr>
+<tr><td><code>Buginese</code></td></tr>
+<tr><td><code>Buhid</code></td></tr>
+<tr><td><code>Canadian_Aboriginal</code></td></tr>
+<tr><td><code>Carian</code></td></tr>
+<tr><td><code>Caucasian_Albanian</code></td></tr>
+<tr><td><code>Chakma</code></td></tr>
+<tr><td><code>Cham</code></td></tr>
+<tr><td><code>Cherokee</code></td></tr>
+<tr><td><code>Common</code></td></tr>
+<tr><td><code>Coptic</code></td></tr>
+<tr><td><code>Cuneiform</code></td></tr>
+<tr><td><code>Cypriot</code></td></tr>
+<tr><td><code>Cyrillic</code></td></tr>
+<tr><td><code>Deseret</code></td></tr>
+<tr><td><code>Devanagari</code></td></tr>
+<tr><td><code>Duployan</code></td></tr>
+<tr><td><code>Egyptian_Hieroglyphs</code></td></tr>
+<tr><td><code>Elbasan</code></td></tr>
+<tr><td><code>Ethiopic</code></td></tr>
+<tr><td><code>Georgian</code></td></tr>
+<tr><td><code>Glagolitic</code></td></tr>
+<tr><td><code>Gothic</code></td></tr>
+<tr><td><code>Grantha</code></td></tr>
+<tr><td><code>Greek</code></td></tr>
+<tr><td><code>Gujarati</code></td></tr>
+<tr><td><code>Gurmukhi</code></td></tr>
+<tr><td><code>Han</code></td></tr>
+<tr><td><code>Hangul</code></td></tr>
+<tr><td><code>Hanunoo</code></td></tr>
+<tr><td><code>Hatran</code></td></tr>
+<tr><td><code>Hebrew</code></td></tr>
+<tr><td><code>Hiragana</code></td></tr>
+<tr><td><code>Imperial_Aramaic</code></td></tr>
+<tr><td><code>Inherited</code></td></tr>
+<tr><td><code>Inscriptional_Pahlavi</code></td></tr>
+<tr><td><code>Inscriptional_Parthian</code></td></tr>
+<tr><td><code>Javanese</code></td></tr>
+<tr><td><code>Kaithi</code></td></tr>
+<tr><td><code>Kannada</code></td></tr>
+<tr><td><code>Katakana</code></td></tr>
+<tr><td><code>Kayah_Li</code></td></tr>
+<tr><td><code>Kharoshthi</code></td></tr>
+<tr><td><code>Khmer</code></td></tr>
+<tr><td><code>Khojki</code></td></tr>
+<tr><td><code>Khudawadi</code></td></tr>
+<tr><td><code>Lao</code></td></tr>
+<tr><td><code>Latin</code></td></tr>
+<tr><td><code>Lepcha</code></td></tr>
+<tr><td><code>Limbu</code></td></tr>
+<tr><td><code>Linear_A</code></td></tr>
+<tr><td><code>Linear_B</code></td></tr>
+<tr><td><code>Lisu</code></td></tr>
+<tr><td><code>Lycian</code></td></tr>
+<tr><td><code>Lydian</code></td></tr>
+<tr><td><code>Mahajani</code></td></tr>
+<tr><td><code>Malayalam</code></td></tr>
+<tr><td><code>Mandaic</code></td></tr>
+<tr><td><code>Manichaean</code></td></tr>
+<tr><td><code>Meetei_Mayek</code></td></tr>
+<tr><td><code>Mende_Kikakui</code></td></tr>
+<tr><td><code>Meroitic_Cursive</code></td></tr>
+<tr><td><code>Meroitic_Hieroglyphs</code></td></tr>
+<tr><td><code>Miao</code></td></tr>
+<tr><td><code>Modi</code></td></tr>
+<tr><td><code>Mongolian</code></td></tr>
+<tr><td><code>Mro</code></td></tr>
+<tr><td><code>Multani</code></td></tr>
+<tr><td><code>Myanmar</code></td></tr>
+<tr><td><code>Nabataean</code></td></tr>
+<tr><td><code>New_Tai_Lue</code></td></tr>
+<tr><td><code>Nko</code></td></tr>
+<tr><td><code>Ogham</code></td></tr>
+<tr><td><code>Ol_Chiki</code></td></tr>
+<tr><td><code>Old_Hungarian</code></td></tr>
+<tr><td><code>Old_Italic</code></td></tr>
+<tr><td><code>Old_North_Arabian</code></td></tr>
+<tr><td><code>Old_Permic</code></td></tr>
+<tr><td><code>Old_Persian</code></td></tr>
+<tr><td><code>Old_South_Arabian</code></td></tr>
+<tr><td><code>Old_Turkic</code></td></tr>
+<tr><td><code>Oriya</code></td></tr>
+<tr><td><code>Osmanya</code></td></tr>
+<tr><td><code>Pahawh_Hmong</code></td></tr>
+<tr><td><code>Palmyrene</code></td></tr>
+<tr><td><code>Pau_Cin_Hau</code></td></tr>
+<tr><td><code>Phags_Pa</code></td></tr>
+<tr><td><code>Phoenician</code></td></tr>
+<tr><td><code>Psalter_Pahlavi</code></td></tr>
+<tr><td><code>Rejang</code></td></tr>
+<tr><td><code>Runic</code></td></tr>
+<tr><td><code>Samaritan</code></td></tr>
+<tr><td><code>Saurashtra</code></td></tr>
+<tr><td><code>Sharada</code></td></tr>
+<tr><td><code>Shavian</code></td></tr>
+<tr><td><code>Siddham</code></td></tr>
+<tr><td><code>SignWriting</code></td></tr>
+<tr><td><code>Sinhala</code></td></tr>
+<tr><td><code>Sora_Sompeng</code></td></tr>
+<tr><td><code>Sundanese</code></td></tr>
+<tr><td><code>Syloti_Nagri</code></td></tr>
+<tr><td><code>Syriac</code></td></tr>
+<tr><td><code>Tagalog</code></td></tr>
+<tr><td><code>Tagbanwa</code></td></tr>
+<tr><td><code>Tai_Le</code></td></tr>
+<tr><td><code>Tai_Tham</code></td></tr>
+<tr><td><code>Tai_Viet</code></td></tr>
+<tr><td><code>Takri</code></td></tr>
+<tr><td><code>Tamil</code></td></tr>
+<tr><td><code>Telugu</code></td></tr>
+<tr><td><code>Thaana</code></td></tr>
+<tr><td><code>Thai</code></td></tr>
+<tr><td><code>Tibetan</code></td></tr>
+<tr><td><code>Tifinagh</code></td></tr>
+<tr><td><code>Tirhuta</code></td></tr>
+<tr><td><code>Ugaritic</code></td></tr>
+<tr><td><code>Vai</code></td></tr>
+<tr><td><code>Warang_Citi</code></td></tr>
+<tr><td><code>Yi</code></td></tr>
 </table>
 
 <table>
