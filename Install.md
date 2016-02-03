@@ -1,6 +1,6 @@
 <b>Quick links:</b> <a href='https://github.com/google/re2'>browse</a> | <a href='https://github.com/google/re2/commits/master'>changes</a>
 
-RE2 should install on any modern Unix clone with g++.
+RE2 should build and run on any modern Unix clone with GCC or Clang.
 
 <pre>
 git clone https://code.googlesource.com/re2<br>
@@ -8,7 +8,7 @@ cd re2<br>
 make test<br>
 make install<br>
 make testinstall</pre>
-(On BSD systems, use ` gmake ` instead of ` make `.)
+(On BSD systems, use `gmake` instead of `make`.)
 
 Bazel and CMake are also supported. The latter should enable generation of MSVC and Xcode projects. Patches are welcome!
 
