@@ -13,7 +13,7 @@ make testinstall</pre>
 Bazel and CMake are also supported. The latter enables generation of Visual Studio and Xcode projects as well as MinGW and MSYS makefiles. Bug reports and/or fixes are welcome!
 
 Your compiler must support C++11. In particular, the DFA execution engine depends on C++11 atomics.<br>
-_Visual Studio users: You will need Visual Studio 2013 or later._
+_Visual Studio users: You need Visual Studio 2013 or later. Building a DLL is not currently supported._
 
 For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/master/re2/re2.h'>re2/re2.h</a>.
 
