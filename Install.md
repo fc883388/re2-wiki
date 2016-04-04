@@ -10,7 +10,7 @@ make install<br>
 make testinstall</pre>
 (On BSD systems, use `gmake` instead of `make`.)
 
-Bazel and CMake are also supported. The latter enables generation of Visual Studio and Xcode projects as well as MinGW and MSYS makefiles. Bug reports and/or fixes are welcome!
+Bazel and CMake are also supported. The latter enables generation of Visual Studio and Xcode projects as well as Cygwin, MinGW and MSYS makefiles. Bug reports and/or fixes are welcome!
 
 Your compiler must support C++11. In particular, the DFA execution engine depends on C++11 atomics.<br>
 _Visual Studio users: You need Visual Studio 2013 or later. Building a DLL is not currently supported._
