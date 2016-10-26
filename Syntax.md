@@ -1,6 +1,5 @@
 <p>This page lists the regular expression syntax accepted by RE2.
-<p>It also lists syntax accepted by PCRE, PERL, and VIM.
-<p>Grayed out expressions are not supported by RE2.
+<p>It also lists some syntax accepted by PCRE, PERL, and VIM.
 
 <table>
 <tr><th>kinds of single-character expressions</th><th>examples</th></tr>
