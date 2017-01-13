@@ -2,15 +2,13 @@ This page explains some terms that you will encounter in the RE2 codebase.
 
 **BitState:**
 
-**bytecode:**
+**bytecode:** An array of instructions (i.e. opcodes and operands) that defines an automaton.
 
-**bytemap:**
+**bytemap:** An array that maps all 256 byte values to equivalence classes, which are sets of byte values that the corresponding bytecode treats indistinguishably. For example, the bytecode for `\d+` has two equivalence classes: the byte values from `'0'` to `'9'`; and all other byte values. Used by the DFA and OnePass execution engines.
 
 **DFA:**
 
-**execution engine:**
-
-**`Inst`:**
+**execution engine:** An implementation of bytecode execution in a particular style.
 
 **NFA:**
 
