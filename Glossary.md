@@ -2,9 +2,9 @@ This page explains some terms that you will encounter in the RE2 codebase.
 
 **BitState:** The execution engine that implements backtracking search AKA depth-first search. Uses a stack structure to eschew recursion and a bitmap structure to guarantee linear-time performance. Used only when the pattern and the input string are small.
 
-**bytecode:** An array of instructions (i.e. opcodes and operands) that defines an automaton.
+**bytecode:** The array of instructions (i.e. opcodes and operands) that defines an automaton.
 
-**bytemap:** An array that maps all 256 byte values to equivalence classes, which are sets of byte values that the bytecode treats indistinguishably. For example, the bytecode for `\d+` has two equivalence classes: the byte values from `'0'` to `'9'`; and all other byte values. Used by the DFA and OnePass execution engines.
+**bytemap:** The array that maps all 256 byte values to equivalence classes, which are sets of byte values that the bytecode treats indistinguishably. For example, the bytecode for `\d+` has two equivalence classes: the byte values from `'0'` to `'9'`; and all other byte values. Used by the DFA and OnePass execution engines.
 
 **DFA:** The execution engine that implements Deterministic Finite Automaton search. Fundamentally similar to the NFA execution engine, but caches the results of computations in exchange for ignoring submatches. Supports concurrent lookups and serialised inserts per `DFA` object. Used as the workhorse.
 
