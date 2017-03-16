@@ -12,7 +12,7 @@ There are two basic operators: ` RE2::FullMatch ` requires the regexp to match t
 same match that Perl would have chosen in Perl mode.
 
 Examples:
-```
+```cpp
 assert(RE2::FullMatch("hello", "h.*o"))
 assert(!RE2::FullMatch("hello", "e"))
 
@@ -26,7 +26,7 @@ Both matching functions take additional arguments in which submatches will be st
 A ` StringPiece ` is a pointer to the original input text, along with a count.  It behaves like a string but doesn't carry its own storage.  Like when using a pointer, when using a ` StringPiece ` you must be careful not to use it once the original text has been deleted or gone out of scope.
 
 Examples:
-```
+```cpp
 // Successful parsing.
 int i;
 string s;
@@ -53,7 +53,7 @@ The examples above all recompile the regular expression on each call.
 Instead, you can compile it once to an RE2 object and reuse that object for each call.
 
 Example:
-```
+```cpp
 RE2 re("(\\w+):(\\d+)");
 assert(re.ok());  // compiled; if not, see re.error();
 
@@ -70,7 +70,7 @@ be used to change RE2's default options.
 For example, the predefined ` Quiet ` options silence error
 message printing when a regular expression fails to parse:
 
-```
+```cpp
 RE2 re("(ab", RE2::Quiet);  // don't write to stderr for parser failure
 assert(!re.ok());  // can check re.error() for details
 ```
