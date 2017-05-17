@@ -3,11 +3,13 @@
 RE2 should build and run on any modern Unix clone with GCC or Clang.
 
 <pre>
-git clone https://code.googlesource.com/re2<br>
-cd re2<br>
-make test<br>
-make install<br>
-make testinstall</pre>
+git clone https://code.googlesource.com/re2
+cd re2
+make
+make test
+make install
+make testinstall
+</pre>
 (On BSD systems, use `gmake` instead of `make`.)
 
 Bazel and CMake are also supported. The latter enables generation of Visual Studio and Xcode projects as well as Cygwin, MinGW and MSYS makefiles. Bug reports and/or fixes are welcome!
