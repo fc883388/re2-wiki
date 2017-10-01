@@ -255,6 +255,7 @@
 
 <table>
 <tr><th>Unicode character class names--scripts</th></tr>
+<tr><td><code>Adlam</code></td></tr>
 <tr><td><code>Ahom</code></td></tr>
 <tr><td><code>Anatolian_Hieroglyphs</code></td></tr>
 <tr><td><code>Arabic</code></td></tr>
@@ -265,6 +266,7 @@
 <tr><td><code>Bassa_Vah</code></td></tr>
 <tr><td><code>Batak</code></td></tr>
 <tr><td><code>Bengali</code></td></tr>
+<tr><td><code>Bhaiksuki</code></td></tr>
 <tr><td><code>Bopomofo</code></td></tr>
 <tr><td><code>Brahmi</code></td></tr>
 <tr><td><code>Braille</code></td></tr>
@@ -326,6 +328,8 @@
 <tr><td><code>Malayalam</code></td></tr>
 <tr><td><code>Mandaic</code></td></tr>
 <tr><td><code>Manichaean</code></td></tr>
+<tr><td><code>Marchen</code></td></tr>
+<tr><td><code>Masaram_Gondi</code></td></tr>
 <tr><td><code>Meetei_Mayek</code></td></tr>
 <tr><td><code>Mende_Kikakui</code></td></tr>
 <tr><td><code>Meroitic_Cursive</code></td></tr>
@@ -338,7 +342,9 @@
 <tr><td><code>Myanmar</code></td></tr>
 <tr><td><code>Nabataean</code></td></tr>
 <tr><td><code>New_Tai_Lue</code></td></tr>
+<tr><td><code>Newa</code></td></tr>
 <tr><td><code>Nko</code></td></tr>
+<tr><td><code>Nushu</code></td></tr>
 <tr><td><code>Ogham</code></td></tr>
 <tr><td><code>Ol_Chiki</code></td></tr>
 <tr><td><code>Old_Hungarian</code></td></tr>
@@ -349,6 +355,7 @@
 <tr><td><code>Old_South_Arabian</code></td></tr>
 <tr><td><code>Old_Turkic</code></td></tr>
 <tr><td><code>Oriya</code></td></tr>
+<tr><td><code>Osage</code></td></tr>
 <tr><td><code>Osmanya</code></td></tr>
 <tr><td><code>Pahawh_Hmong</code></td></tr>
 <tr><td><code>Palmyrene</code></td></tr>
@@ -366,6 +373,7 @@
 <tr><td><code>SignWriting</code></td></tr>
 <tr><td><code>Sinhala</code></td></tr>
 <tr><td><code>Sora_Sompeng</code></td></tr>
+<tr><td><code>Soyombo</code></td></tr>
 <tr><td><code>Sundanese</code></td></tr>
 <tr><td><code>Syloti_Nagri</code></td></tr>
 <tr><td><code>Syriac</code></td></tr>
@@ -376,6 +384,7 @@
 <tr><td><code>Tai_Viet</code></td></tr>
 <tr><td><code>Takri</code></td></tr>
 <tr><td><code>Tamil</code></td></tr>
+<tr><td><code>Tangut</code></td></tr>
 <tr><td><code>Telugu</code></td></tr>
 <tr><td><code>Thaana</code></td></tr>
 <tr><td><code>Thai</code></td></tr>
@@ -386,6 +395,7 @@
 <tr><td><code>Vai</code></td></tr>
 <tr><td><code>Warang_Citi</code></td></tr>
 <tr><td><code>Yi</code></td></tr>
+<tr><td><code>Zanabazar_Square</code></td></tr>
 </table>
 
 <table>
