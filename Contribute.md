@@ -144,7 +144,7 @@ Instead, switch back to the master branch, discard the old branch, and pull your
 
 <pre>
 $ git checkout master
-$ git change -d bugfix
+$ git branch -d bugfix
 $ git pull
 </pre>
 
