@@ -200,9 +200,9 @@
 <tr><td><code>[[:blank:]]</code></td><td>blank (≡ <code>[\t ]</code>)</td></tr>
 <tr><td><code>[[:cntrl:]]</code></td><td>control (≡ <code>[\x00-\x1F\x7F]</code>)</td></tr>
 <tr><td><code>[[:digit:]]</code></td><td>digits (≡ <code>[0-9]</code>)</td></tr>
-<tr><td><code>[[:graph:]]</code></td><td>graphical (≡ <code>[!-~] == [A-Za-z0-9!"#$%&amp;'()*+,\-./:;&lt;=&gt;?@[\\\]^_</code><code>`</code><code>{|}~]</code>)</td></tr>
+<tr><td><code>[[:graph:]]</code></td><td>graphical (≡ <code>[!-~]</code> ≡ <code>[A-Za-z0-9!"#$%&amp;'()*+,\-./:;&lt;=&gt;?@[\\\]^_</code><code>`</code><code>{|}~]</code>)</td></tr>
 <tr><td><code>[[:lower:]]</code></td><td>lower case (≡ <code>[a-z]</code>)</td></tr>
-<tr><td><code>[[:print:]]</code></td><td>printable (≡ <code>[ -~] == [ [:graph:]]</code>)</td></tr>
+<tr><td><code>[[:print:]]</code></td><td>printable (≡ <code>[ -~]</code> ≡ <code>[ [:graph:]]</code>)</td></tr>
 <tr><td><code>[[:punct:]]</code></td><td>punctuation (≡ <code>[!-/:-@[-</code><code>`</code><code>{-~]</code>)</td></tr>
 <tr><td><code>[[:space:]]</code></td><td>whitespace (≡ <code>[\t\n\v\f\r ]</code>)</td></tr>
 <tr><td><code>[[:upper:]]</code></td><td>upper case (≡ <code>[A-Z]</code>)</td></tr>
