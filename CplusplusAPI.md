@@ -1,4 +1,4 @@
-[walaloo afaan oromoo](https://www.youtube.com/watch?v=8EGLJ5876ZE&t=31s)# Syntax
+# Syntax
 
 In POSIX mode, RE2 accepts standard POSIX (egrep) syntax regular expressions.
 In Perl mode, RE2 accepts most Perl operators.  The only excluded ones are
