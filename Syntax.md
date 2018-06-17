@@ -285,6 +285,7 @@
 <tr><td><code>Cyrillic</code></td></tr>
 <tr><td><code>Deseret</code></td></tr>
 <tr><td><code>Devanagari</code></td></tr>
+<tr><td><code>Dogra</code></td></tr>
 <tr><td><code>Duployan</code></td></tr>
 <tr><td><code>Egyptian_Hieroglyphs</code></td></tr>
 <tr><td><code>Elbasan</code></td></tr>
@@ -295,9 +296,11 @@
 <tr><td><code>Grantha</code></td></tr>
 <tr><td><code>Greek</code></td></tr>
 <tr><td><code>Gujarati</code></td></tr>
+<tr><td><code>Gunjala_Gondi</code></td></tr>
 <tr><td><code>Gurmukhi</code></td></tr>
 <tr><td><code>Han</code></td></tr>
 <tr><td><code>Hangul</code></td></tr>
+<tr><td><code>Hanifi_Rohingya</code></td></tr>
 <tr><td><code>Hanunoo</code></td></tr>
 <tr><td><code>Hatran</code></td></tr>
 <tr><td><code>Hebrew</code></td></tr>
@@ -325,11 +328,13 @@
 <tr><td><code>Lycian</code></td></tr>
 <tr><td><code>Lydian</code></td></tr>
 <tr><td><code>Mahajani</code></td></tr>
+<tr><td><code>Makasar</code></td></tr>
 <tr><td><code>Malayalam</code></td></tr>
 <tr><td><code>Mandaic</code></td></tr>
 <tr><td><code>Manichaean</code></td></tr>
 <tr><td><code>Marchen</code></td></tr>
 <tr><td><code>Masaram_Gondi</code></td></tr>
+<tr><td><code>Medefaidrin</code></td></tr>
 <tr><td><code>Meetei_Mayek</code></td></tr>
 <tr><td><code>Mende_Kikakui</code></td></tr>
 <tr><td><code>Meroitic_Cursive</code></td></tr>
@@ -352,6 +357,7 @@
 <tr><td><code>Old_North_Arabian</code></td></tr>
 <tr><td><code>Old_Permic</code></td></tr>
 <tr><td><code>Old_Persian</code></td></tr>
+<tr><td><code>Old_Sogdian</code></td></tr>
 <tr><td><code>Old_South_Arabian</code></td></tr>
 <tr><td><code>Old_Turkic</code></td></tr>
 <tr><td><code>Oriya</code></td></tr>
@@ -372,6 +378,7 @@
 <tr><td><code>Siddham</code></td></tr>
 <tr><td><code>SignWriting</code></td></tr>
 <tr><td><code>Sinhala</code></td></tr>
+<tr><td><code>Sogdian</code></td></tr>
 <tr><td><code>Sora_Sompeng</code></td></tr>
 <tr><td><code>Soyombo</code></td></tr>
 <tr><td><code>Sundanese</code></td></tr>
