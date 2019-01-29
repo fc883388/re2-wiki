@@ -70,6 +70,7 @@
 <tr><td><font color='#808080'><code>%(re)</code></font></td><td>non-capturing group <small>(NOT SUPPORTED)</small> <small>VIM</small></td></tr>
 </table>
 
+<a name="flags"></a>
 <table>
 <tr><th></th><th>Flags</th></tr>
 <tr><td><code>i</code></td><td>case-insensitive (default false)</td></tr>
