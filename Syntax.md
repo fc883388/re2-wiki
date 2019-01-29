@@ -70,7 +70,7 @@
 <tr><td><font color='#808080'><code>%(re)</code></font></td><td>non-capturing group <small>(NOT SUPPORTED)</small> <small>VIM</small></td></tr>
 </table>
 
-<table>
+<table id="flags">
 <tr><th></th><th>Flags</th></tr>
 <tr><td><code>i</code></td><td>case-insensitive (default false)</td></tr>
 <tr><td><code>m</code></td><td>multi-line mode: <code>^</code> and <code>$</code> match begin/end line in addition to begin/end text (default false)</td></tr>
