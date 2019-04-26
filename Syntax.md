@@ -1,3 +1,88 @@
+
+<p>
+Regular expressions are a notation for
+describing sets of character strings.
+When a particular string is in the set
+described by a regular expression,
+we often say that the regular expression
+<i>matches</i>
+the string.
+</p>
+
+<p>
+The simplest regular expression is a single literal character.
+Except for the metacharacters like
+<code>*+?()|</code>,
+characters match themselves.
+To match a metacharacter, escape it with
+a backslash:
+<code>\+</code>
+matches a literal plus character.
+</p>
+
+<p>
+Two regular expressions can be alternated or concatenated to form a new
+regular expression:
+if <i>e</i><sub>1</sub> matches
+<i>s</i>
+and <i>e</i><sub>2</sub> matches
+<i>t</i>,
+then <i>e</i><sub>1</sub><code>|</code><i>e</i><sub>2</sub> matches
+<i>s</i>
+or
+<i>t</i>,
+and
+<i>e</i><sub>1</sub><i>e</i><sub>2</sub>
+matches
+<i>st</i>.
+</p>
+
+<p>
+The metacharacters
+<code>*</code>,
+<code>+</code>,
+and
+<code>?</code>
+are repetition operators:
+<i>e</i><sub>1</sub><code>*</code>
+matches a sequence of zero or more (possibly different)
+strings, each of which match <i>e</i><sub>1</sub>;
+<i>e</i><sub>1</sub><code>+</code>
+matches one or more;
+<i>e</i><sub>1</sub><code>?</code>
+matches zero or one.
+</p>
+
+<p>
+The operator precedence, from weakest to strongest binding, is
+first alternation, then concatenation, and finally the
+repetition operators.
+Explicit parentheses can be used to force different meanings,
+just as in arithmetic expressions.
+Some examples:
+<code>ab|cd</code>
+is equivalent to
+<code>(ab)|(cd)</code>;
+<code>ab*</code>
+is equivalent to
+<code>a(b*)</code>.
+</p>
+
+<p>
+The syntax described so far is most of the traditional Unix
+<i>egrep</i>
+regular expression syntax.
+This subset suffices to describe all regular
+languages: loosely speaking, a regular language is a set
+of strings that can be matched in a single pass through
+the text using only a fixed amount of memory.
+Newer regular expression facilities (notably Perl and
+those that have copied it) have added
+many new operators and escape sequences, which make the regular
+expressions more concise, and sometimes more cryptic, but usually
+not more powerful.
+</p>
+
 <p>This page lists the regular expression syntax accepted by RE2.
 <p>It also lists some syntax accepted by PCRE, PERL, and VIM.
 
