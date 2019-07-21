@@ -375,6 +375,7 @@ not more powerful.
 <tr><td><code>Duployan</code></td></tr>
 <tr><td><code>Egyptian_Hieroglyphs</code></td></tr>
 <tr><td><code>Elbasan</code></td></tr>
+<tr><td><code>Elymaic</code></td></tr>
 <tr><td><code>Ethiopic</code></td></tr>
 <tr><td><code>Georgian</code></td></tr>
 <tr><td><code>Glagolitic</code></td></tr>
@@ -432,10 +433,12 @@ not more powerful.
 <tr><td><code>Multani</code></td></tr>
 <tr><td><code>Myanmar</code></td></tr>
 <tr><td><code>Nabataean</code></td></tr>
+<tr><td><code>Nandinagari</code></td></tr>
 <tr><td><code>New_Tai_Lue</code></td></tr>
 <tr><td><code>Newa</code></td></tr>
 <tr><td><code>Nko</code></td></tr>
 <tr><td><code>Nushu</code></td></tr>
+<tr><td><code>Nyiakeng_Puachue_Hmong</code></td></tr>
 <tr><td><code>Ogham</code></td></tr>
 <tr><td><code>Ol_Chiki</code></td></tr>
 <tr><td><code>Old_Hungarian</code></td></tr>
@@ -486,6 +489,7 @@ not more powerful.
 <tr><td><code>Tirhuta</code></td></tr>
 <tr><td><code>Ugaritic</code></td></tr>
 <tr><td><code>Vai</code></td></tr>
+<tr><td><code>Wancho</code></td></tr>
 <tr><td><code>Warang_Citi</code></td></tr>
 <tr><td><code>Yi</code></td></tr>
 <tr><td><code>Zanabazar_Square</code></td></tr>
