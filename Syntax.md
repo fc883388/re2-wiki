@@ -364,6 +364,7 @@ not more powerful.
 <tr><td><code>Chakma</code></td></tr>
 <tr><td><code>Cham</code></td></tr>
 <tr><td><code>Cherokee</code></td></tr>
+<tr><td><code>Chorasmian</code></td></tr>
 <tr><td><code>Common</code></td></tr>
 <tr><td><code>Coptic</code></td></tr>
 <tr><td><code>Cuneiform</code></td></tr>
@@ -371,6 +372,7 @@ not more powerful.
 <tr><td><code>Cyrillic</code></td></tr>
 <tr><td><code>Deseret</code></td></tr>
 <tr><td><code>Devanagari</code></td></tr>
+<tr><td><code>Dives_Akuru</code></td></tr>
 <tr><td><code>Dogra</code></td></tr>
 <tr><td><code>Duployan</code></td></tr>
 <tr><td><code>Egyptian_Hieroglyphs</code></td></tr>
@@ -402,6 +404,7 @@ not more powerful.
 <tr><td><code>Katakana</code></td></tr>
 <tr><td><code>Kayah_Li</code></td></tr>
 <tr><td><code>Kharoshthi</code></td></tr>
+<tr><td><code>Khitan_Small_Script</code></td></tr>
 <tr><td><code>Khmer</code></td></tr>
 <tr><td><code>Khojki</code></td></tr>
 <tr><td><code>Khudawadi</code></td></tr>
@@ -491,6 +494,7 @@ not more powerful.
 <tr><td><code>Vai</code></td></tr>
 <tr><td><code>Wancho</code></td></tr>
 <tr><td><code>Warang_Citi</code></td></tr>
+<tr><td><code>Yezidi</code></td></tr>
 <tr><td><code>Yi</code></td></tr>
 <tr><td><code>Zanabazar_Square</code></td></tr>
 </table>
