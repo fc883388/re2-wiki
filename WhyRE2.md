@@ -1,3 +1,5 @@
+# Black Lives Matter. [Support the Equal Justice Initiative.](https://support.eji.org/give/153413/#!/donation/checkout)
+
 _**Safety is RE2's raison d'être.**_
 
 RE2 was designed and implemented with an explicit goal of being able to handle regular expressions from untrusted users without risk. One of its primary guarantees is that the match time is linear in the length of the input string. It was also written with production concerns in mind: the parser, the compiler and the execution engines limit their memory usage by working within a configurable budget – failing gracefully when exhausted – and they avoid stack overflow by eschewing recursion.

@@ -1,3 +1,5 @@
+# Black Lives Matter. [Support the Equal Justice Initiative.](https://support.eji.org/give/153413/#!/donation/checkout)
+
 This document explains how to contribute changes to RE2. It assumes you have installed RE2 using the [installation instructions](Install).
 
 ## Discuss your design

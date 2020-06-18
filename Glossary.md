@@ -1,3 +1,5 @@
+# Black Lives Matter. [Support the Equal Justice Initiative.](https://support.eji.org/give/153413/#!/donation/checkout)
+
 This page explains some terms that you will encounter in the RE2 codebase.
 
 **BitState:** The execution engine that implements backtracking search AKA depth-first search. Uses a stack structure to eschew recursion and a bitmap structure to guarantee linear-time performance. Used only when the pattern and the input string are small.

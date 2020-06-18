@@ -1,3 +1,5 @@
+# Black Lives Matter. [Support the Equal Justice Initiative.](https://support.eji.org/give/153413/#!/donation/checkout)
+
 <b>Quick links:</b> <a href='https://github.com/google/re2'>browse</a> | <a href='https://github.com/google/re2/commits/master'>changes</a>
 
 RE2 should build and run on any modern Unix clone with GCC or Clang.
