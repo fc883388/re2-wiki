@@ -39,3 +39,4 @@ An OCaml wrapper is at https://github.com/janestreet/re2/ and on OPAM (opam.ocam
 A Perl wrapper is at https://github.com/dgl/re-engine-RE2/ and on CPAN (cpan.org).<br>
 An R wrapper is at https://github.com/qinwf/re2r/ and on CRAN (cran.r-project.org).<br>
 A Ruby wrapper is at https://github.com/mudge/re2/ and on RubyGems (rubygems.org).<br>
+A WebAssembly wrapper is at https://github.com/google/re2-wasm/ and on NPM (npmjs.com).<br>
