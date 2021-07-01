@@ -39,7 +39,7 @@ https://code.googlesource.com/re2
 Next, configure a command shortcut <code>git upload</code>.
 
 <pre>
-$ git config alias.upload 'push origin HEAD:refs/for/master'
+$ git config alias.upload 'push origin HEAD:refs/for/main'
 </pre>
 
 Next, install the Gerrit commit hook, which adds a Change-Id line to any commit you make.
@@ -58,7 +58,7 @@ $ git config user.email gre@swtch.com
 
 ### Creating a change
 
-The code review process requires that each change live in a branch with exactly one commit beyond the master branch.
+The code review process requires that each change live in a branch with exactly one commit beyond the main branch.
 Start by switching to a new branch; you can choose any name. In this example we'll use <code>bugfix</code>
 
 <pre>
@@ -97,7 +97,7 @@ While you were working, others might have submitted changes to the repository. T
 
 <pre>
 $ git fetch origin
-$ git rebase origin/master
+$ git rebase origin/main
 </pre>
 
 If files you were editing have changed, Git does its best to merge the remote changes into your local changes. It may leave some files to merge by hand.
@@ -142,19 +142,19 @@ When that happens, you get an email that the code has been submitted.
 
 The change is submitted with additional metadata in the change description, so you will not be able to merge it with
 your work directly. 
-Instead, switch back to the master branch, discard the old branch, and pull your work back into master.
+Instead, switch back to the main branch, discard the old branch, and pull your work back into main.
 
 <pre>
-$ git checkout master
+$ git checkout main
 $ git branch -d bugfix
 $ git pull
 </pre>
 
 ## Copyright
 
-Files in the RE2 repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date. Instead, your name will appear in the [Git change log](https://github.com/google/re2/commits/master) and in the [CONTRIBUTORS](https://github.com/google/re2/blob/master/CONTRIBUTORS) file and perhaps the [AUTHORS](https://github.com/google/re2/blob/master/AUTHORS) file.
+Files in the RE2 repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date. Instead, your name will appear in the [Git change log](https://github.com/google/re2/commits/main) and in the [CONTRIBUTORS](https://github.com/google/re2/blob/main/CONTRIBUTORS) file and perhaps the [AUTHORS](https://github.com/google/re2/blob/main/AUTHORS) file.
 
-The [CONTRIBUTORS](https://github.com/google/re2/blob/master/CONTRIBUTORS) file defines who the RE2 contributors—the people—are; the [AUTHORS](https://github.com/google/re2/blob/master/AUTHORS) file, which defines who “The RE2 Authors”—the copyright holders—are. The RE2 developers at Google will update these files when submitting your first change. In order for them to do that, you need to have completed one of the contributor license agreements:
+The [CONTRIBUTORS](https://github.com/google/re2/blob/main/CONTRIBUTORS) file defines who the RE2 contributors—the people—are; the [AUTHORS](https://github.com/google/re2/blob/main/AUTHORS) file, which defines who “The RE2 Authors”—the copyright holders—are. The RE2 developers at Google will update these files when submitting your first change. In order for them to do that, you need to have completed one of the contributor license agreements:
 
   * If you are the copyright holder, you will need to agree to the [individual contributor license agreement](http://code.google.com/legal/individual-cla-v1.0.html), which can be completed online.
 
