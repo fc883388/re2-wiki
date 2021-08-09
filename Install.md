@@ -32,6 +32,7 @@ The Python wrapper is at https://github.com/google/re2/tree/abseil/python<br>
 and on PyPI (https://pypi.org/project/google-re2/).<br>
 <br>
 A C wrapper is at https://github.com/marcomaggi/cre2/.<br>
+A D wrapper is at https://github.com/ShigekiKarita/re2d/ and on DUB (code.dlang.org).<br>
 An Erlang wrapper is at https://github.com/dukesoferl/re2/ and on Hex (hex.pm).<br>
 An Inferno wrapper is at https://github.com/powerman/inferno-re2/.<br>
 A Node.js wrapper is at https://github.com/uhop/node-re2/ and on NPM (npmjs.com).<br>
