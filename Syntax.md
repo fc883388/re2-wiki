@@ -370,6 +370,7 @@ not more powerful.
 <tr><td><code>Coptic</code></td></tr>
 <tr><td><code>Cuneiform</code></td></tr>
 <tr><td><code>Cypriot</code></td></tr>
+<tr><td><code>Cypro_Minoan</code></td></tr>
 <tr><td><code>Cyrillic</code></td></tr>
 <tr><td><code>Deseret</code></td></tr>
 <tr><td><code>Devanagari</code></td></tr>
@@ -453,6 +454,7 @@ not more powerful.
 <tr><td><code>Old_Sogdian</code></td></tr>
 <tr><td><code>Old_South_Arabian</code></td></tr>
 <tr><td><code>Old_Turkic</code></td></tr>
+<tr><td><code>Old_Uyghur</code></td></tr>
 <tr><td><code>Oriya</code></td></tr>
 <tr><td><code>Osage</code></td></tr>
 <tr><td><code>Osmanya</code></td></tr>
@@ -484,6 +486,7 @@ not more powerful.
 <tr><td><code>Tai_Viet</code></td></tr>
 <tr><td><code>Takri</code></td></tr>
 <tr><td><code>Tamil</code></td></tr>
+<tr><td><code>Tangsa</code></td></tr>
 <tr><td><code>Tangut</code></td></tr>
 <tr><td><code>Telugu</code></td></tr>
 <tr><td><code>Thaana</code></td></tr>
@@ -491,8 +494,10 @@ not more powerful.
 <tr><td><code>Tibetan</code></td></tr>
 <tr><td><code>Tifinagh</code></td></tr>
 <tr><td><code>Tirhuta</code></td></tr>
+<tr><td><code>Toto</code></td></tr>
 <tr><td><code>Ugaritic</code></td></tr>
 <tr><td><code>Vai</code></td></tr>
+<tr><td><code>Vithkuqi</code></td></tr>
 <tr><td><code>Wancho</code></td></tr>
 <tr><td><code>Warang_Citi</code></td></tr>
 <tr><td><code>Yezidi</code></td></tr>
