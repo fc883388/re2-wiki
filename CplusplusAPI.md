@@ -1,5 +1,3 @@
-# Black Lives Matter. [Support the Equal Justice Initiative.](https://support.eji.org/give/153413/#!/donation/checkout)
-
 # Syntax
 
 In POSIX mode, RE2 accepts standard POSIX (egrep) syntax regular expressions.
