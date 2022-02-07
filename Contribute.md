@@ -113,6 +113,16 @@ After selecting which Google Account to create a Git password for, you should en
 with a password and instructions for installing that password for use by Git.
 Follow those instructions.
 
+### Sign the CLA
+
+You need to complete one of the contributor license agreements:
+
+  * If you are the copyright holder, you will need to agree to the [individual contributor license agreement](http://code.google.com/legal/individual-cla-v1.0.html), which can be completed online.
+
+  * If your organization is the copyright holder, the organization will need to agree to the [corporate contributor license agreement](http://code.google.com/legal/corporate-cla-v1.0.html).  (If the copyright holder for your code has already completed the agreement in connection with another Google open source project, it does not need to be completed again.)
+
+This rigmarole needs to be done only for your first submission.
+
 ### Uploading a change
 
 When the change is ready, upload it using <code>git upload</code>, which you defined earlier.
@@ -152,13 +162,7 @@ $ git pull
 
 Files in the RE2 repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date. Instead, your name will appear in the [Git change log](https://github.com/google/re2/commits/main) and in the [CONTRIBUTORS](https://github.com/google/re2/blob/main/CONTRIBUTORS) file and perhaps the [AUTHORS](https://github.com/google/re2/blob/main/AUTHORS) file.
 
-The [CONTRIBUTORS](https://github.com/google/re2/blob/main/CONTRIBUTORS) file defines who the RE2 contributors—the people—are; the [AUTHORS](https://github.com/google/re2/blob/main/AUTHORS) file, which defines who “The RE2 Authors”—the copyright holders—are. The RE2 developers at Google will update these files when submitting your first change. In order for them to do that, you need to have completed one of the contributor license agreements:
-
-  * If you are the copyright holder, you will need to agree to the [individual contributor license agreement](http://code.google.com/legal/individual-cla-v1.0.html), which can be completed online.
-
-  * If your organization is the copyright holder, the organization will need to agree to the [corporate contributor license agreement](http://code.google.com/legal/corporate-cla-v1.0.html).  (If the copyright holder for your code has already completed the agreement in connection with another Google open source project, it does not need to be completed again.)
-
-This rigmarole needs to be done only for your first submission.
+The [CONTRIBUTORS](https://github.com/google/re2/blob/main/CONTRIBUTORS) file defines who the RE2 contributors—the people—are; the [AUTHORS](https://github.com/google/re2/blob/main/AUTHORS) file, which defines who “The RE2 Authors”—the copyright holders—are. The RE2 developers at Google will update these files when submitting your first change.
 
 Code that you contribute should use the standard copyright header:
 
