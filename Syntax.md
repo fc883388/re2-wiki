@@ -138,6 +138,7 @@ not more powerful.
 <tr><td><font color='#808080'><code>x{n}+</code></font></td><td>exactly <code>n</code> <code>x</code>, possessive <small>(NOT SUPPORTED)</small></td></tr>
 </table>
 
+<a name="grouping"></a>
 <table>
 <tr><th></th><th>Grouping</th></tr>
 <tr><td><code>(re)</code></td><td>numbered capturing group (submatch)</td></tr>
