@@ -82,8 +82,11 @@ expressions more concise, and sometimes more cryptic, but usually
 not more powerful.
 </p>
 
-<p>This page lists the regular expression syntax accepted by RE2.
-<p>It also lists some syntax accepted by PCRE, PERL, and VIM.
+<p>This page lists the regular expression syntax accepted by RE2. Note that this
+syntax is a subset of that accepted by PCRE, roughly speaking, and with various
+<a href="https://swtch.com/~rsc/regexp/regexp3.html#caveats">caveats</a>.</p>
+
+<p>It also lists some syntax accepted by PCRE, PERL, and VIM.</p>
 
 <table>
 <tr><th>kinds of single-character expressions</th><th>examples</th></tr>
