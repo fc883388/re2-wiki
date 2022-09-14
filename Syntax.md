@@ -406,6 +406,7 @@ syntax is a subset of that accepted by PCRE, roughly speaking, and with various
 <tr><td><code>Kaithi</code></td></tr>
 <tr><td><code>Kannada</code></td></tr>
 <tr><td><code>Katakana</code></td></tr>
+<tr><td><code>Kawi</code></td></tr>
 <tr><td><code>Kayah_Li</code></td></tr>
 <tr><td><code>Kharoshthi</code></td></tr>
 <tr><td><code>Khitan_Small_Script</code></td></tr>
@@ -440,6 +441,7 @@ syntax is a subset of that accepted by PCRE, roughly speaking, and with various
 <tr><td><code>Multani</code></td></tr>
 <tr><td><code>Myanmar</code></td></tr>
 <tr><td><code>Nabataean</code></td></tr>
+<tr><td><code>Nag_Mundari</code></td></tr>
 <tr><td><code>Nandinagari</code></td></tr>
 <tr><td><code>New_Tai_Lue</code></td></tr>
 <tr><td><code>Newa</code></td></tr>
