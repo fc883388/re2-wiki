@@ -12,10 +12,12 @@ make testinstall
 </pre>
 (On BSD systems, use `gmake` instead of `make`.)
 
+Building RE2 requires Abseil (https://github.com/abseil/abseil-cpp) to be installed on your system. Building the testing for RE2 requires GoogleTest (https://github.com/google/googletest) and Benchmark (https://github.com/google/benchmark) to be installed as well.
+
 Bazel and CMake are also supported. The latter enables generation of Visual Studio and Xcode projects as well as Cygwin, MinGW and MSYS makefiles. Bug reports and/or fixes are welcome!
 
-Your compiler must support C++11. In particular, the DFA execution engine depends on C++11 atomics.<br>
-_Visual Studio users: You need Visual Studio 2015 or later._<br>
+Your compiler must support C++14.<br>
+_Visual Studio users: You need Visual Studio 2019 or later._<br>
 _Cygwin users: You must run CMake from the Cygwin command line, not the Windows command line._<br>
 
 For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/master/re2/re2.h'>re2/re2.h</a>.
