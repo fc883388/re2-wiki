@@ -146,7 +146,7 @@ syntax is a subset of that accepted by PCRE, roughly speaking, and with various
 <tr><th></th><th>Grouping</th></tr>
 <tr><td><code>(re)</code></td><td>numbered capturing group (submatch)</td></tr>
 <tr><td><code>(?P&lt;name&gt;re)</code></td><td>named & numbered capturing group (submatch)</td></tr>
-<tr><td><font color='#808080'><code>(?&lt;name&gt;re)</code></font></td><td>named & numbered capturing group (submatch) <small>(NOT SUPPORTED)</small></td></tr>
+<tr><td><code>(?&lt;name&gt;re)</code></td><td>named & numbered capturing group (submatch)</td></tr>
 <tr><td><font color='#808080'><code>(?'name're)</code></font></td><td>named & numbered capturing group (submatch) <small>(NOT SUPPORTED)</small></td></tr>
 <tr><td><code>(?:re)</code></td><td>non-capturing group</td></tr>
 <tr><td><code>(?flags)</code></td><td>set flags within current group; non-capturing</td></tr>
