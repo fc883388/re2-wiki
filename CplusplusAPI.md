@@ -78,7 +78,7 @@ assert(!re.ok());  // can check re.error() for details
 Other useful predefined options are ` Latin1 ` (disable UTF-8) and ` POSIX ` (use POSIX syntax and leftmost longest matching).
 
 You can also declare your own RE2::Options object and then configure it as you like.
-See the [header](https://github.com/google/re2/blob/master/re2/re2.h) for the full set of options.
+See the [header](https://github.com/google/re2/blob/main/re2/re2.h) for the full set of options.
 
 # Unicode Normalization
 
@@ -88,4 +88,4 @@ RE2 operates on Unicode code points: it makes no attempt at normalization. For e
 
 For advanced usage, like constructing your own argument lists,
 or using RE2 as a lexer, or parsing hex, octal, and C-radix numbers,
-see [re2.h](https://github.com/google/re2/blob/master/re2/re2.h).
+see [re2.h](https://github.com/google/re2/blob/main/re2/re2.h).
