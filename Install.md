@@ -20,6 +20,8 @@ Your compiler must support C++14.<br>
 _Visual Studio users: You need Visual Studio 2019 or later._<br>
 _Cygwin users: You must run CMake from the Cygwin command line, not the Windows command line._<br>
 
+CMake has two ways to use a dependency: `add_subdirectory()`, which is when the dependency's **_sources_** are in a subdirectory of your project; and `find_package()`, which is when the dependency's **_binaries_** have been built and installed somewhere on your system. The Abseil documentation walks through the former [here](https://abseil.io/docs/cpp/quickstart-cmake) versus the latter [here](https://abseil.io/docs/cpp/tools/cmake-installs). Once you get Abseil working, getting RE2 working will be a very similar process and, either way, `target_link_libraries(… re2::re2)` should Just Work™.
+
 For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/master/re2/re2.h'>re2/re2.h</a>.
 
 [How to contribute code.](Contribute)
