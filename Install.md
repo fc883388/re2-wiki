@@ -1,4 +1,4 @@
-<b>Quick links:</b> <a href='https://github.com/google/re2'>browse</a> | <a href='https://github.com/google/re2/commits/master'>changes</a>
+<b>Quick links:</b> <a href='https://github.com/google/re2'>browse</a> | <a href='https://github.com/google/re2/commits/main'>changes</a>
 
 RE2 should build and run on any modern Unix clone with GCC or Clang.
 
@@ -22,7 +22,7 @@ _Cygwin users: You must run CMake from the Cygwin command line, not the Windows 
 
 CMake has two ways to use a dependency: `add_subdirectory()`, which is when the dependency's **_sources_** are in a subdirectory of your project; and `find_package()`, which is when the dependency's **_binaries_** have been built and installed somewhere on your system. The Abseil documentation walks through the former [here](https://abseil.io/docs/cpp/quickstart-cmake) versus the latter [here](https://abseil.io/docs/cpp/tools/cmake-installs). Once you get Abseil working, getting RE2 working will be a very similar process and, either way, `target_link_libraries(… re2::re2)` should Just Work™.
 
-For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/master/re2/re2.h'>re2/re2.h</a>.
+For documentation on how to use RE2, see the comment at the top of <a href='https://github.com/google/re2/blob/main/re2/re2.h'>re2/re2.h</a>.
 
 [How to contribute code.](Contribute)
 
