@@ -160,9 +160,7 @@ $ git pull
 
 ## Copyright
 
-Files in the RE2 repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date. Instead, your name will appear in the [Git change log](https://github.com/google/re2/commits/main) and in the [CONTRIBUTORS](https://github.com/google/re2/blob/main/CONTRIBUTORS) file and perhaps the [AUTHORS](https://github.com/google/re2/blob/main/AUTHORS) file.
-
-The [CONTRIBUTORS](https://github.com/google/re2/blob/main/CONTRIBUTORS) file defines who the RE2 contributors—the people—are; the [AUTHORS](https://github.com/google/re2/blob/main/AUTHORS) file, which defines who “The RE2 Authors”—the copyright holders—are. The RE2 developers at Google will update these files when submitting your first change.
+Files in the RE2 repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date. Instead, your name will appear in the [Git change log](https://github.com/google/re2/commits/main).
 
 Code that you contribute should use the standard copyright header:
 
