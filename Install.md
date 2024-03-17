@@ -30,7 +30,7 @@ Mail [re2-dev](https://groups.google.com/group/re2-dev) with problems.
 
 RE2's native language is C++.<br>
 <br>
-The Python wrapper is at https://github.com/google/re2/tree/abseil/python<br>
+The Python wrapper is at https://github.com/google/re2/tree/main/python<br>
 and on PyPI (https://pypi.org/project/google-re2/).<br>
 <br>
 A C wrapper is at https://github.com/marcomaggi/cre2/.<br>
